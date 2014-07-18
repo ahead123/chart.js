@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<meta charset="UTF-8">
+	<head>
+		<title>My Resume</title>
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="fewdstyles.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="chart.js"></script>
+	</head>
+
+<body>
+	<header>
+		<h1 id="art">Arthur Head</h1>
+		<h3 id="fewd">Front End Web Developer</h1>
+	</header>
+		<div id="container">
+			<section id="left">
+				<section id="left-container"><br>
+					<div id="about">
+						<h2 id="profile">Hello!</h2><hr>
+						<p>My name is Arthur Head and i'm a newly trained front end web developer seeking professinoal experience. I'm interested in all kinds of technology but my major focus is on developing for web and mobile interfaces.</p>
+					</div><br>
+					<div id="education">
+						<h3 id="profile"><i class="fa fa-lightbulb-o fa-2x" style="padding: 2%;"></i> Education</h3><hr>
+						<p><span>General Assembly:</span> Front End Web Development - April 2014 - June 2014</p>
+						<p><span>Dillard University:</span> Psychology, B.S. - June 2004</p>
+					</div><br>
+					<div id="experience">
+						<h3 id="profile"><i class="fa fa-user fa-2x" style="padding: 2%;"></i> Work Experience</h3><hr>
+						<p><span>Front End Web Development:</span> General Assembly - April 2014 - June 2014</p>
+						<p>Learned to program responsive websites in HTML, CSS, and JavaScript. Experiemented with a variety of front-end frameworks such as JQuery, SASS, and Bootstrap. Coded the front-end for my own entrepreneurial idea from scratch..</p>
+						<p><span>Online Financial Aid Advisor:</span> ICDC College - May 2013 - March 2014</p>
+						<p>Assisted prospective students with the California private institutiion financial aid enrollment process. Utilized a variety of remote assistance technologies to account for the varied locations of students. Relied heavily on Google Docs, and Gmail to keep in touch with students throughout the U.S.</p>
+						<p><span>Program Coordinator:</span> United States Air Force Germany - August 2010 - May 2013</p>
+						<p>Juggled a wide range of administrative duties for the Air Force Weather Squadron. Oversaw activities of a 200+ member squadron, using Microsoft's SharePoint Task Management Tracking tool.</p>
+						<p><span>English Teacher:</span> Talking Club South Korea - September 2008 - August 2010</p>
+						<p>Taught basic conversational English and grammar rules to South Korean school children. Created daily lesson
+plans, a fun learning environment, and coordinated lessons with in house Korean native teachers.</p>
+						<p><span>Advertising Account Executive:</span> Times Record News - August 2007 - August 2008</p>
+						<p>Managed an outside sales territory of 200 small business owners and sold online and print advertising products. Met monthly sales goals and quotas, and utilized sales lead generation strategies to keep a steady flow of new
+business accounts. Coordinated ad layout and design with advertisers and in house creative department. 
+</p>
+						<p><span>Senior Credit Analyst:</span> Wells Fargo Financial - June 2006 - August 2007</p>
+						<p>Converted current and prospective Wells Fargo customers into a variety of financial planning products.
+Restructured debt for subprime credit customers by offering mortgage and auto loan refinancing options. Utilized Wells Fargo's enterprise database to obtain an overall view of the customers assets and
+liabilities to present the best informed plans.
+</p>
+						<p><span>Circulation Sales:</span> Los Angeles Times - July 2004 - June 2006</p>
+						<p>Mangaged a small 10-20 person outside circulation sales team. Tracked personal and team daily sales targets in Microsoft Excel. Communicated weekly with grocery store managers to secure space for weekly circulation promotion campaigns.</p>
+					</div>
+				</section>	
+			</section>
+			<section id="right">
+				<section id="right-container"><br>
+					<div id="img-holder">
+					</div><br>
+					<div id="contact">
+						<p><i class="fa fa-map-marker fa-fw"></i>Marina Del Rey, CA</p>
+						<p><i class="fa fa-mobile-phone fa-fw"></i>310 531 6879</p>
+						<p><i class="fa fa-envelope-o fa-fw"></i><small><a href="http://www.coderart@outlook.com">Email</a></small></p>
+						<p><i class="fa fa-desktop fa-fw"></i><small><a href="http://www.arthurhead.com">Portfolio</a></small></p>
+						<p><i class="fa fa-twitter fa-fw"></i><small><a href="http://www.twitter.com/ahead123">Twitter</a></small></p>
+						<p><i class="fa fa-linkedin fa-fw"></i><small><a href="http://www.linkedin.com/pub/arthur-head/48/803/583">LinkedIN</a></small></p>
+						<p><i class="fa fa-github fa-fw"></i><small><a href="http://www.github.com/ahead123">Fork Me on GitHub</a></small></p>
+						<p><i class="fa fa-code fa-fw"></i><small><a href="http://www.codecademy.com/dataRockstar89704">Code Cademy</a></small></p>
+					</div>
+					<div id="skills">
+						<h3 id="profile">Skills</h3><hr>
+						<p>HTML/CSS</p>
+						<canvas id="html" height="60" width="60" style="width: 60px; height: 60px;"></canvas>
+						<script>
+						$(document).ready(function(){
+							var doughnutData = [
+									{
+										value: 90,
+										color:"#1abc9c"
+									},
+									{
+										value : 10,
+										color : "#ecf0f1"
+									}
+								];
+								var myDoughnut = new Chart(document.getElementById("html").getContext("2d")).Doughnut(doughnutData);
+							});
+						</script>
+						<p>JavaScript</p>
+						<canvas id="javascript" height="60" width="60" style="width: 60px; height: 60px;"></canvas>
+						<script>
+												$(document).ready(function(){
+													var doughnutData = [
+															{
+																value: 50,
+																color:"#1abc9c"
+															},
+															{
+																value : 50,
+																color : "#ecf0f1"
+															}
+														];
+								var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
+													});
+						</script>
+						<p>GitHub</p>
+						<canvas id="github" height="60" width="60" style="width: 60px; height: 60px;"></canvas>
+						<script>
+												$(document).ready(function(){
+													var doughnutData = [
+															{
+																value: 60,
+																color:"#1abc9c"
+															},
+															{
+																value : 40,
+																color : "#ecf0f1"
+															}
+														];
+								var myDoughnut = new Chart(document.getElementById("github").getContext("2d")).Doughnut(doughnutData);
+													});
+						</script>
+						<p>Bootstrap</p>
+						<canvas id="bootstrap" height="60" width="60" style="width: 60px; height: 60px;"></canvas>
+						<script>
+												$(document).ready(function(){
+													var doughnutData = [
+															{
+																value: 65,
+																color:"#1abc9c"
+															},
+															{
+																value : 35,
+																color : "#ecf0f1"
+															}
+														];
+								var myDoughnut = new Chart(document.getElementById("bootstrap").getContext("2d")).Doughnut(doughnutData);
+													});
+						</script>
+						<p>JQuery</p>
+						<canvas id="jquery" height="60" width="60" style="width: 60px; height: 60px;"></canvas>
+						<script>
+												$(document).ready(function(){
+													var doughnutData = [
+															{
+																value: 80,
+																color:"#1abc9c"
+															},
+															{
+																value : 20,
+																color : "#ecf0f1"
+															}
+														];
+								var myDoughnut = new Chart(document.getElementById("jquery").getContext("2d")).Doughnut(doughnutData);
+													});
+						</script>
+						<p>SASS</p>
+						<canvas id="sass" height="60" width="60" style="width: 60px; height: 60px;"></canvas>
+						<script>
+												$(document).ready(function(){
+													var doughnutData = [
+															{
+																value: 40,
+																color:"#1abc9c"
+															},
+															{
+																value : 60,
+																color : "#ecf0f1"
+															}
+														];
+								var myDoughnut = new Chart(document.getElementById("sass").getContext("2d")).Doughnut(doughnutData);
+													});
+						</script>
+					</div>
+				</section>	
+			</section>
+			<footer>
+				<p id="website"><a id="footerlink" href="http://www.arthurhead.com/resume">www.arthurhead.com/resume</a></p>
+			</footer>
+		</div>	
+</body>
+</html>
+
